@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>ViajaNet - Passagens Aéreas com economia garantida!</title>
+
+        <link rel="icon" href="./imagens/favicon.ico"/>
+        <link rel="stylesheet" href="./css/estilo.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        
+        <!-- Begin Header -->
+
+        <header class="py-2">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Inicio Logo -->
+                    <div class="col-2 col-md-2 logo">
+                        <a href="index.html"><img src="./imagens/logo.png"/></a>
+                    </div>
+                    <!-- Fim Logo -->
+
+                    <!-- Início Menu -->
+                    <div class="col-8 col-md-8 d-flex justify-content-around">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                    <div class="navbar-nav">
+                                        <a class="nav-link" href="#">Passagens Aéreas</a>
+                                        <a class="nav-link" href="#">Hotéis</a>
+                                        <a class="nav-link" href="#">Carros</a>
+                                        <a class="nav-link" href="#">Seguros</a>
+                                        <a class="nav-link" href="#">QuandoViajar</a>
+                                        <a class="nav-link" href="#">Atendimento</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- Fim Menu -->
+
+                    <!-- Início Login -->
+
+                    <div class="col-2 col-md-1 col-lg-1 login">
+                        <a href="#"><strong>Entrar</strong><span><img src="./imagens/user.png" width="25"/></span></a>
+                    </div>
+
+                    <!-- Fim Login -->
+
+                </div>
+
+
+            </div>
+        </header>
+
+        <!-- End Header -->
+
+
+
+
+        <!-- Begin Banner -->
+        <section class="banner">
+            <div class="row align-items-center banner ">
+                <div class="col-12 d-flex justify-content-around">
+
+                    <div class="form">
+                        <form>
+
+                            <div class="title-form">
+                                <h4>Encontre os melhores valores e boa viagem!</h4>
+                            </div>
+
+                            <div class="choices-trav">
+                                <label for="soida">
+                                    Só ida
+                                </label>
+                                <input type="radio" id="soida" name="oneoption" value="" required/>
+
+                                <label for="idavolta">
+                                    Ida e volta
+                                </label>
+                                <input type="radio" id="idavolta" name="oneoption" value="" required/>
+
+                                <label for="variosdestinos">
+                                    Vários destinos
+                                </label>
+                                <input type="radio" id="variosdestinos" name="oneoption" value="" required/>
+                            </div>
+
+                            <div class="search-destination">
+
+                                <div class="origem">
+                                    <p>
+                                        Origem
+                                    </p>
+                                    <input type="text" placeholder="Insira a cidade ou aeroporto de origem">
+                                </div>
+                                <div class="destino">
+                                    <p>
+                                        Destino
+                                    </p>
+                                    <input type="text" placeholder="Insira a cidade ou aeroporto de destino">
+                                </div>
+
+                            </div>
+
+                            <div class="search-date">
+
+                                <div class="dataida">
+                                    <p>
+                                        Data de ida
+                                    </p>
+                                    <input type="date" placeholder="Defina uma data">
+                                </div>
+        
+                                <div class="datavolta">
+                                    <p>
+                                        Data de volta
+                                    </p>
+                                    <input type="date" placeholder="Defina uma data">
+                                </div>
+        
+                                <div class="qtdpassageiros">
+                                    <p>
+                                        Passageiros e classes
+                                    </p>
+                                    <input type="number" placeholder="Quantidade de passageiros">
+                                </div>
+        
+                                <div class="button">
+                                    <p>
+                                        Clique para pesquisar
+                                    </p>
+                                    <button type="submit"><span><img src="./imagens/search.png"></span>Pesquisar</button>
+                                </div>
+
+                            </div>
+
+                            <div class="no-date">
+                                <input type="checkbox" value=""/><span> Não defini as datas</span>
+                            </div>
+
+
+                        </form>
+                    </div>   
+                </div>
+
+                <div class="container-form-2">
+
+                    <form class="form-2">
+
+                        <div class="title-form-2">
+                            <h4>Passagens aéreas</h4>
+                        </div>
+
+                        <div class="choices-trav-2">
+
+                            <input type="radio" id="soida-2" name="oneoption-2" value="" required/>
+                            <label for="soida-2">
+                                <p>só ida</p>
+                            </label> 
+
+                            <input type="radio" id="idavolta-2" name="oneoption-2" value="" required/>
+                            <label for="idavolta-2">
+                                <p>Ida e volta</p>
+                            </label>
+                             
+                        </div>
+
+                        <div class="origem-2">
+                            <p>
+                                Informe sua origem
+                            </p>
+                            <input type="text" placeholder="Insira a cidade ou aeroporto de origem">
+                        </div>
+
+                        <div class="destino-2">
+                            <p>
+                                Informe sua origem
+                            </p>
+                            <input type="text" placeholder="Insira a cidade ou aeroporto de origem">
+                        </div>
+
+                        <div class="search-date-2">
+                            <div class="dataida-2">
+                                <p>
+                                    Data de ida
+                                </p>
+                                <input type="date" placeholder="Defina uma data">
+                            </div>
+
+                            <div class="datavolta-2">
+                                <p>
+                                    Data de volta
+                                </p>
+                                <input type="date" placeholder="Defina uma data">
+
+                            </div>
+                        </div>
+
+                        <div class="qtdpassageiros-2">
+                            <div class="qtd-2">
+                                <p>
+                                    Adultos
+                                </p>
+                                <input type="number" placeholder="Adultos">
+                            </div>
+
+                            <div class="qtd-2">
+                                <p>
+                                    Adultos
+                                </p>
+                                <input type="number" placeholder="Crianças">
+                                <p>
+                                    2 a 11 anos
+                                </p>
+
+                            </div>
+
+                            <div class="qtd-2">
+                                <p>
+                                    Adultos
+                                </p>
+                                <input type="number" placeholder="Bebê">
+                                <p>
+                                    0 a 23 meses
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="no-date-2">
+                            <input type="checkbox" value=""/><span> Não defini as datas</span>
+                        </div>
+
+                        <div class="button-2">
+                            <button type="submit"><span><img src="./imagens/search.png"></span>Pesquisar</button>
+                        </div>
+                        
+
+                    </form>
+                </div>
+
+
+
+        
+                
+            </div>
+        </section>
+
+        <!-- End Banner -->
+
+
+        <!-- Begin Produtos -->
+
+        <section class="produtos">
+
+            <div class="title-line-produtos">
+                <h5>Destinos com maior economia saindo de <span class="origem-gps">São Paulo</span></h5>
+            </div>
+
+            <div class="title-destino">
+                <h5>Passagens Nacionais</h5>
+            </div>
+
+            
+            <div class="line">
+
+                <div class="item-produtos">
+                    <div class="img-produtos">
+                        <img src="./imagens/destinos/salvador.jpg" width="300">
+                    </div>
+                    <div class="destino-produto">
+                        <h6>Passagem aérea para Salvador</h6>
+                        <p>
+                            <b>IDA</b><span> DIA/MES</span><span> <b>VOLTA</b> </span><span>DIA/MES</span>
+                        </p>
+                        <p>
+                            A partir de <span class="valor-produto">R$ 349,00</span>
+                        </p>
+                        <div class="btn-comprar">
+                            <button type="submit">Comprar agora!</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item-produtos">
+                    <div class="img-produtos">
+                        <img src="./imagens/destinos/rj.jpg" width="300" height="169">
+                    </div>
+                    <div class="destino-produto">
+                        <h6>Passagem aérea para Rio de Janeiro</h6>
+                        <p>
+                            <b>IDA</b><span> DIA/MES</span><span> <b>VOLTA</b> </span><span>DIA/MES</span>
+                        </p>
+                        <p>
+                            A partir de <span class="valor-produto">R$ 349,00</span>
+                        </p>
+                        <div class="btn-comprar">
+                            <button type="submit">Comprar agora!</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item-produtos">
+                    <div class="img-produtos">
+                        <img src="./imagens/destinos/recife.jpg" width="300" height="169">
+                    </div>
+                    <div class="destino-produto">
+                        <h6>Passagem aérea para Recife</h6>
+                        <p>
+                            <b>IDA</b><span> DIA/MES</span><span> <b>VOLTA</b> </span><span>DIA/MES</span>
+                        </p>
+                        <p>
+                            A partir de <span class="valor-produto">R$ 349,00</span>
+                        </p>
+                        <div class="btn-comprar">
+                            <button type="submit">Comprar agora!</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item-produtos">
+                    <div class="img-produtos">
+                        <img src="./imagens/destinos/curitiba.jpg" width="300" height="169">
+                    </div>
+                    <div class="destino-produto">
+                        <h6>Passagem aérea para Curitiba</h6>
+                        <p>
+                            <b>IDA</b><span> DIA/MES</span><span> <b>VOLTA</b> </span><span>DIA/MES</span>
+                        </p>
+                        <p>
+                            A partir de <span class="valor-produto">R$ 349,00</span>
+                        </p>
+                        <div class="btn-comprar">
+                            <button type="submit">Comprar agora!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Início da Segunda linha de produtos -->
+
+            <div class="title-destino">
+                <h5>Passagens Internacionais</h5>
+            </div>
+
+            <div class="line">
+
+                <div class="item-produtos">
+                    <div class="img-produtos">
+                        <img src="./imagens/destinos/paris.jpg" width="300" height="169">
+                    </div>
+                    <div class="destino-produto">
+                        <h6>Passagem aérea para Paris</h6>
+                        <p>
+                            <b>IDA</b><span> DIA/MES</span><span> <b>VOLTA</b> </span><span>DIA/MES</span>
+                        </p>
+                        <p>
+                            A partir de <span class="valor-produto">R$ 2349,00</span>
+                        </p>
+                        <div class="btn-comprar">
+                            <button type="submit">Comprar agora!</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item-produtos">
+                    <div class="img-produtos">
+                        <img src="./imagens/destinos/nyc.jpg" width="300" height="169">
+                    </div>
+                    <div class="destino-produto">
+                        <h6>Passagem aérea para Nova Iorque</h6>
+                        <p>
+                            <b>IDA</b><span> DIA/MES</span><span> <b>VOLTA</b> </span><span>DIA/MES</span>
+                        </p>
+                        <p>
+                            A partir de <span class="valor-produto">R$ 2349,00</span>
+                        </p>
+                        <div class="btn-comprar">
+                            <button type="submit">Comprar agora!</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item-produtos">
+                    <div class="img-produtos">
+                        <img src="./imagens/destinos/dublin.jpg" width="300" height="169">
+                    </div>
+                    <div class="destino-produto">
+                        <h6>Passagem aérea para Dublin</h6>
+                        <p>
+                            <b>IDA</b><span> DIA/MES</span><span> <b>VOLTA</b> </span><span>DIA/MES</span>
+                        </p>
+                        <p>
+                            A partir de <span class="valor-produto">R$ 2349,00</span>
+                        </p>
+                        <div class="btn-comprar">
+                            <button type="submit">Comprar agora!</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item-produtos">
+                    <div class="img-produtos">
+                        <img src="./imagens/destinos/sidney.jpg" width="300" height="169">
+                    </div>
+                    <div class="destino-produto">
+                        <h6>Passagem aérea para Sidney</h6>
+                        <p>
+                            <b>IDA</b><span> DIA/MES</span><span> <b>VOLTA</b> </span><span>DIA/MES</span>
+                        </p>
+                        <p>
+                            A partir de <span class="valor-produto">R$ 2349,00</span>
+                        </p>
+                        <div class="btn-comprar">
+                            <button type="submit">Comprar agora!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fim da segunda Linha de produtos -->
+
+            <!-- Início das companhias Aéreas -->
+
+            <div>
+                <h5>Companhias aéreas preferidas dos viajantes</h5>
+            </div>
+
+            <div class="line">
+
+                <div class="item-produtos">
+                    <div class="img-produtos">
+                        <img src="./imagens/companhiaAerea/Latam.png" width="300" height="120">
+                    </div>
+                    <div class="destino-produto">
+                        <h6>Voe Latam</h6>
+                        <p>
+                            <b>IDA</b><span> DIA/MES</span><span> <b>VOLTA</b> </span><span>DIA/MES</span>
+                        </p>
+                        <p>
+                            A partir de <span class="valor-produto">R$ 267,00</span>
+                        </p>
+                        
+                    </div>
+                </div>
+    
+                <div class="item-produtos">
+                    <div class="img-produtos">
+                        <img src="./imagens/companhiaAerea/gol.png" width="300" height="120">
+                    </div>
+                    <div class="destino-produto">
+                        <h6>Voe Gol</h6>
+                        <p>
+                            <b>IDA</b><span> DIA/MES</span><span> <b>VOLTA</b> </span><span>DIA/MES</span>
+                        </p>
+                        <p>
+                            A partir de <span class="valor-produto">R$ 263,00</span>
+                        </p>
+                        
+                    </div>
+                </div>
+    
+                <div class="item-produtos">
+                    <div class="img-produtos">
+                        <img src="./imagens/companhiaAerea/azul.png" width="300" height="120">
+                    </div>
+                    <div class="destino-produto">
+                        <h6>Voe Azul</h6>
+                        <p>
+                            <b>IDA</b><span> DIA/MES</span><span> <b>VOLTA</b> </span><span>DIA/MES</span>
+                        </p>
+                        <p>
+                            A partir de <span class="valor-produto">R$ 303,00</span>
+                        </p>
+                        
+                    </div>
+                </div>
+    
+                <div class="item-produtos">
+                    <div class="img-produtos">
+                        <img src="./imagens/companhiaAerea/avianca.png" width="300" height="120">
+                    </div>
+                    <div class="destino-produto">
+                        <h6>Voe Avianca Internacional</h6>
+                        <p>
+                            <b>IDA</b> e <span><b>VOLTA</b></span><span> a partir de:</span>
+                        </p>
+                        <p>
+                            A partir de <span class="valor-produto">R$ 3117,00</span>
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fim das Companhias Aéreas -->
+
+        </section>
+
+        <!-- End Produtos -->
+
+
+        <!-- Begin Footer -->
+
+        <footer>
+            <div class="Social-media">
+                <ul class=rede-social>
+                    <li>VAJANET NAS<br>REDES SOCIAIS</li>
+                    <a href="#"><li><img src="./imagens/facebook.png" width="40px">FACEBOOK</li></a>
+                    <a href="#"><li><img src="./imagens/instagram.png" width="40px"">INSTAGRAM</li></a>
+                    <a href="#"><li><img src="./imagens/twitter.png" width="40px"">TWITTER</li></a>
+                    <a href="#"><li><img src="./imagens/linkedin.png" width="40px"">LINKEDIN</li></a>
+                    <a href="#"><li><img src="./imagens/youtube.png" width="40px"">YOUTUBE</li></a>
+                    <a href="#"><li><img src="./imagens/blog.png" width="40px"">BLOG</li></a>
+                </ul>
+            </div>
+
+            <div class="Social-media-2">
+                <ul class=rede-social>
+                    <a href="#"><li><img src="./imagens/facebook.png" width="40px">FACEBOOK</li></a>
+                    <a href="#"><li><img src="./imagens/instagram.png" width="40px"">INSTAGRAM</li></a>
+                    <a href="#"><li><img src="./imagens/twitter.png" width="40px"">TWITTER</li></a>
+                    <a href="#"><li><img src="./imagens/linkedin.png" width="40px"">LINKEDIN</li></a>
+                    <a href="#"><li><img src="./imagens/youtube.png" width="40px"">YOUTUBE</li></a>
+                    <a href="#"><li><img src="./imagens/blog.png" width="40px"">BLOG</li></a>
+                </ul>
+            </div>
+
+            <div class="cadastro-email">
+
+                <div class="container-cadastro">
+                    <div class="icon">
+                        <img src="./imagens/email-cadastro.png"/>
+                    </div>
+    
+                    <div class="txt-info">
+                        <span>Receba ofertas exclusivas<br>do ViajaNet no seu e-mail</span>
+                    </div>
+    
+                    <div class="txtarea">
+                        <input type="text" placeholder="Informe seu e-mail"/>
+                    </div>
+    
+                    <div class="btn-cadastrar">
+                        <button type="submit">Cadastre-se</button>
+                    </div>
+                </div> 
+                
+
+            </div>
+
+
+
+            <div class="cadastro-email-2">
+
+                <div class="container-cadastro-2">
+
+                    <div class="title-email-cadastro-2">
+                        <h4>Receba ofertas exclusivas do ViajaNet no seu e-mail</h4>
+                    </div>
+
+                    <div class="form-email-cadastro-2">
+                        <form>
+                            
+                            <label>
+                                 Insira seu e-mail
+                            </label>
+                            <input type="email" placeholder="usuario@exemplo.com">
+                            
+
+                            <div class="btn-cad-email">
+                                <button type="submit">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div> 
+                
+            </div>
+
+
+
+
+
+
+            <div class="main-footer-title">
+                <h5>Agência de Viagens Online</h5>
+            </div>
+
+            <div class="menu-footer">
+
+                <ul>
+                    <li class="title-footer">Titulo 01</li>
+                    <li><a href="#">Opção 01</a></li>
+                    <li><a href="#">Opção 02</a></li>
+                    <li><a href="#">Opção 03</a></li>
+                    <li><a href="#">Opção 04</a></li>
+                    <li><a href="#">Opção 05</a></li>
+                    <li><a href="#">Opção 06</a></li>
+                    <li><a href="#">Opção 07</a></li>
+                    <li><a href="#">Opção 08</a></li>
+                    <li><a href="#">Opção 09</a></li>
+                    <li><a href="#">Opção 10</a></li>
+                    <li><a href="#">Opção 11</a></li>
+                    <li><a href="#">Opção 12</a></li>
+                </ul>
+
+                <ul>
+                    <li class="title-footer">Titulo 02</li>
+                    <li><a href="#">Opção 01</a></li>
+                    <li><a href="#">Opção 02</a></li>
+                    <li><a href="#">Opção 03</a></li>
+                    <li><a href="#">Opção 04</a></li>
+                    <li><a href="#">Opção 05</a></li>
+                    <li><a href="#">Opção 06</a></li>
+                    <li><a href="#">Opção 07</a></li>
+                    <li><a href="#">Opção 08</a></li>
+                    <li><a href="#">Opção 09</a></li>
+                    <li><a href="#">Opção 10</a></li>
+                    <li><a href="#">Opção 11</a></li>
+                    <li><a href="#">Opção 12</a></li>
+                </ul>
+
+                <ul>
+                    <li class="title-footer">Titulo 03</li>
+                    <li><a href="#">Opção 01</a></li>
+                    <li><a href="#">Opção 02</a></li>
+                    <li><a href="#">Opção 03</a></li>
+                    <li><a href="#">Opção 04</a></li>
+                    <li><a href="#">Opção 05</a></li>
+                    <li><a href="#">Opção 06</a></li>
+                    <li><a href="#">Opção 07</a></li>
+                    <li><a href="#">Opção 08</a></li>
+                    <li><a href="#">Opção 09</a></li>
+                    <li><a href="#">Opção 10</a></li>
+                    <li><a href="#">Opção 11</a></li>
+                    <li><a href="#">Opção 12</a></li>
+                </ul>
+
+                <ul>
+                    <li class="title-footer">Titulo 04</li>
+                    <li><a href="#">Opção 01</a></li>
+                    <li><a href="#">Opção 02</a></li>
+                    <li><a href="#">Opção 03</a></li>
+                    <li><a href="#">Opção 04</a></li>
+                    <li><a href="#">Opção 05</a></li>
+                    <li><a href="#">Opção 06</a></li>
+                    <li><a href="#">Opção 07</a></li>
+                    <li><a href="#">Opção 08</a></li>
+                    <li><a href="#">Opção 09</a></li>
+                    <li><a href="#">Opção 10</a></li>
+                    <li><a href="#">Opção 11</a></li>
+                    <li><a href="#">Opção 12</a></li>
+                </ul>
+
+                <ul>
+                    <li class="title-footer">Titulo 05</li>
+                    <li><a href="#">Opção 01</a></li>
+                    <li><a href="#">Opção 02</a></li>
+                    <li><a href="#">Opção 03</a></li>
+                    <li><a href="#">Opção 04</a></li>
+                    <li><a href="#">Opção 05</a></li>
+                    <li><a href="#">Opção 06</a></li>
+                    <li><a href="#">Opção 07</a></li>
+                    <li><a href="#">Opção 08</a></li>
+                    <li><a href="#">Opção 09</a></li>
+                    <li><a href="#">Opção 10</a></li>
+                    <li><a href="#">Opção 11</a></li>
+                    <li><a href="#">Opção 12</a></li>
+                </ul>
+
+                <ul>
+                    <li class="title-footer">Titulo 06</li>
+                    <li><a href="#">Opção 01</a></li>
+                    <li><a href="#">Opção 02</a></li>
+                    <li><a href="#">Opção 03</a></li>
+                    <li><a href="#">Opção 04</a></li>
+                    <li><a href="#">Opção 05</a></li>
+                    <li><a href="#">Opção 06</a></li>
+                    <li><a href="#">Opção 07</a></li>
+                    <li><a href="#">Opção 08</a></li>
+                    <li><a href="#">Opção 09</a></li>
+                    <li><a href="#">Opção 10</a></li>
+                    <li><a href="#">Opção 11</a></li>
+                    <li><a href="#">Opção 12</a></li>
+                </ul>
+
+            </div>
+
+            <hr>
+
+            <div class="stamp">
+                <div class="stamp-left">
+    
+                    <img src="./imagens/selos.png">
+            
+                </div>
+                
+                <div class="stamp-right">
+                    
+                    <a href="#"><img src="imagens/programa-viajanet.png"></a>
+                    
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="cnpj">
+                <p>
+                    TVLX Viagens e Turismo S.A. CNPL: | 12.337.454/0001-31 |
+                </p>
+            </div>
+        </footer>
+
+        <!-- End Footer -->
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+    </body>
+</html>
